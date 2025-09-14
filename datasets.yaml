@@ -1,0 +1,7 @@
+path: /Users/ramalakshmi/Documents/xray_classification/yolo_seg
+train: train/images
+val: val/images
+test: val/images
+
+names:
+  0: region

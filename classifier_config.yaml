@@ -1,0 +1,32 @@
+model:
+  architecture: efficientnet-b0
+  pretrained: True
+  num_classes: 3
+  device: 0
+
+data:
+  train_dir: "/Users/ramalakshmi/Documents/xray_classification/classifier_dataset/train"
+  val_dir: "/Users/ramalakshmi/Documents/xray_classification/classifier_dataset/val"
+  input_size: 224
+  batch_size: 1
+  num_workers: 4
+
+augmentation:
+  random_resized_crop: True
+  crop_scale: [0.9, 1.0]
+  crop_ratio: [0.9, 1.1]
+  horizontal_flip: 0.5
+  rotation_limit: 15
+  brightness_limit: 0.15
+  contrast_limit: 0.15
+  fill_value: 129
+
+training:
+  optimizer: Adam
+  lr: 1e-4
+  epochs: 50
+  weight_decay: 0.0001
+  scheduler: step
+  step_size: 10
+  gamma: 0.1
+  early_stopping_patience: 10
