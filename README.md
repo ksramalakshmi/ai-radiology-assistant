@@ -3,13 +3,13 @@
 This repository contains a development prototype for an AI-powered radiology assistant that analyzes knee X-ray images.  
 It combines **object segmentation** using YOLO, **bone density classification** using EfficientNet, and automated **report generation** in a Streamlit-based interface.  
 
----
+
 
 ## Overview  
 
 The project demonstrates a complete pipeline starting from image upload, preprocessing, segmentation, classification, and automated report generation. It is intended as a foundation for extending AI-based clinical tools and workflows.  
 
----
+
 
 ## Pipeline  
 
@@ -40,7 +40,7 @@ The project demonstrates a complete pipeline starting from image upload, preproc
      - Right: auto-generated PDF report shown inline with download option.  
    - Sticky footer for project credits.  
 
----
+
 
 ## Data Preprocessing  
 
@@ -49,7 +49,7 @@ The project demonstrates a complete pipeline starting from image upload, preproc
 - Masks generated from YOLO + SAM outputs were applied to extract bone regions.  
 - Data augmentation techniques were applied during training to improve model generalization.  
 
----
+
 
 ## Features  
 
@@ -60,7 +60,7 @@ The project demonstrates a complete pipeline starting from image upload, preproc
 - Patient and technologist details integrated into the workflow.  
 - Inline PDF viewer with download functionality.  
 
----
+
 
 ## Installation  
 
@@ -71,7 +71,7 @@ git clone https://github.com/your-username/ai-radiology-assistant.git
 cd ai-radiology-assistant
 pip install -r requirements.txt
 ```
- ---
+ 
  
 ## Run the Application
 
@@ -81,7 +81,7 @@ To start the Streamlit app, run:
 streamlit run streamlit_app.py
 ```
 
----
+
 
 ## Project Structure
 
@@ -94,7 +94,7 @@ streamlit run streamlit_app.py
 └── README.md
 ```
 
----
+
 
 ## Next Steps
 
