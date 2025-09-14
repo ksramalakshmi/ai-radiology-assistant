@@ -67,7 +67,7 @@ The project demonstrates a complete pipeline starting from image upload, preproc
 Clone the repository and install dependencies:  
 
 ```bash
-git clone https://github.com/your-username/ai-radiology-assistant.git
+git clone https://github.com/ksramalakshmi/ai-radiology-assistant.git
 cd ai-radiology-assistant
 pip install -r requirements.txt
 ```
