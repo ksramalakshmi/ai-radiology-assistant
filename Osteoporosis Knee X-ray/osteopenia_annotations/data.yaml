@@ -1,0 +1,4 @@
+names:
+  0: region
+path: .
+train: train.txt
